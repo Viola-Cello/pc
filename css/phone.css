@@ -1,0 +1,212 @@
+@media screen and (max-width: 1000px) {
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0 none;font:inherit;margin:0;padding:0;vertical-align:baseline;font-size: 14px;}
+ol,ul{list-style:none outside none;}
+*{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;-o-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box;font:14px/20px Microsoft YaHei,微软雅黑,Arial,Helvetica,sans-serif;}
+table{border-collapse:collapse;border-spacing:0;}
+input,textarea{font:inherit;resize:none;outline:medium;}
+body{font:14px/20px Microsoft YaHei,微软雅黑,Arial,Helvetica,sans-serif;margin:0;padding:0;}
+input{border:0;}
+select{outline: none;}
+a{text-decoration:none;transition:color 0.2s linear 0s;}
+a:focus,a:link,a:active{outline:medium none;text-decoration: none;}
+a:visited,a:hover{text-decoration: none;}
+button{border: none;outline: none;cursor: pointer;}
+.clear{clear:both;content:"";height:1;visibility:hidden;}
+.Txtcenter{text-align:center;}
+.txtLeft{text-align:left;}
+.txtRight{text-align:right;}
+.left{float:left !important;}
+.right{float:right !important;}
+.borderNone{border: none !important;}
+.relative{position: relative !important;}
+    
+.login-bg{
+    position: fixed;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    background: url(../img/login_bg.png) repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    opacity: 1;
+    filter: alpha( opacity = 100%);
+    -moz-opacity : 1;
+    -khtml-opacity: 1;
+}
+.login-wrap{
+    /*min-width: 1000px;
+    min-height: 600px;*/
+}
+.login-container {
+    position: absolute;
+    width: 5.2rem;
+    height: 6.6rem;
+    top: 50%;
+    left: 50%;
+    margin: -3.3rem 0 0 -2.6rem;
+}
+.login-hd {
+    height: 1.5rem;
+    background: rgba(76, 76, 76, 0.66);
+    border-radius: 0.06rem 0.06rem 0 0;
+    color: #FFFFFF;
+    padding: 0.5rem 0.3rem 0.5rem 0.4rem;
+    border-radius: 0.9rem;
+}
+.login-hd h1{
+    color: #FFFFFF;
+    font-size: 0.38rem;
+    font-weight: 200;
+    letter-spacing: -0.01rem;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    line-height: 0.5rem;
+}
+.login-hd h1 span {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.05rem;
+    font-size: 0.13rem;
+    padding: 0 0.08rem;
+    position: absolute;
+    line-height: 0.3rem;
+    top: 0.65rem;
+    right: 0.4rem;
+}
+.login-account {
+    -moz-border-radius: 0 0 0.06rem 0.06rem;
+    -webkit-border-radius: 0 0 0.06rem 0.06rem;
+    -khtml-border-radius: 0 0 0.06rem 0.06rem;
+    border-radius: 0 0 0.06rem 0.06rem;
+    z-index: 3;
+    font-size: 0.18rem !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 0.3rem 0.6rem;
+}
+.form-group {
+    margin-bottom: 0.3rem;
+}
+.form-group:last-child {
+   margin-bottom: 1.4rem;
+}
+.form-group label {
+    display: inline-block;
+    margin-bottom: 0.1rem;
+    font-weight: bold;
+    font-size: 0.27rem;
+    color: #999;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 0.6rem;
+    padding: 0.09rem 0.22rem;
+    font-size: 0.21rem;
+    line-height: 1.428571429;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 0.01rem solid #ccc;
+    border-radius: 0.06rem;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+.btn-login {
+    margin: 0.15rem 0;
+    width: 100%;
+    display: inline-block;
+    padding: 0.09rem 0.22rem;
+    margin-bottom: 0;
+    font-size: 0.25rem;
+    font-weight: normal;
+    line-height: 0.45rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0.06rem;
+}
+.login-footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0.25rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.login-footer h6{
+    color: #fff;
+    font-size: 0.13rem;
+}
+    
+
+
+
+}
+
+
+/*
+	登录部分的css
+*/
+
+
+.login-enter{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0.50rem;
+}
+.login-ipt-box{
+    position: relative;
+    width: 100%;
+    padding: 0.22rem 0;
+    background: url(../img/enter-bg.png) bottom repeat-x;
+    margin-bottom: 0.50rem;
+}
+.login-ipt{
+    width: 100%;
+    height: 0.35rem;
+    padding: 0 0.10rem 0 0.55rem;
+    color: #fff;
+    font-size: 0.29rem;
+    line-height: 0.34rem;
+}
+.user-ipt{
+    background: url(../img/ico_user.png) no-repeat left 0.04rem center;
+    background-size: 0.34rem 0.34rem;
+}
+.pw-ipt{
+    background: url(../img/ico_lock.png) no-repeat left 0.04rem center;
+    background-size: 0.34rem 0.34rem;
+}
+.login-btn-box{
+    width: 100%;
+    margin-top: 1.50rem;
+}
+.login-btn{
+    width: 100%;
+    height: 0.88rem;
+    margin-bottom: 0.3rem;
+    border: 0.01rem solid #fff;
+    border-radius: 0.04rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.38rem;
+    font-size: 0.32rem;
+    background: none;
+    cursor: pointer;
+}
+
