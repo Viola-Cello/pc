@@ -10,7 +10,7 @@ $(document).ready(function(){
 		 $(this).parent().parent().siblings(".messageBox").slideToggle("slow");
 		 
 	});  
-	$(".hd-list>li").mouseover(function(){
+	$(".hd-list > li").mouseover(function(){
 		$(this).find("ul").removeClass("hide");
 	}).mouseout(function(){
 		$(this).find("ul").addClass("hide");
