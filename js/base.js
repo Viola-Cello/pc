@@ -9,12 +9,13 @@ $(document).ready(function(){
 	$(".btn-listtog.top-list").click(function(){
 		 $(this).parent().parent().siblings(".messageBox").slideToggle("slow");
 		 
-	});  
-	$(".hd-list > li").mouseover(function(){
-		$(this).find("ul").removeClass("hide");
-	}).mouseout(function(){
-		$(this).find("ul").addClass("hide");
 	});
+	  
+	// $(".hd-list > li").mouseover(function(){
+	// 	$(this).find("ul").removeClass("hide");
+	// }).mouseout(function(){
+	// 	$(this).find("ul").addClass("hide");
+	// });
 
 	
 });
@@ -23,6 +24,20 @@ $(document).ready(function(){
 
 $(window).load(function(){
 	center();
+	toggle = document.querySelectorAll(".toggle")[0];
+        nav = document.querySelectorAll("nav")[0];
+        toggle_open_text = '菜单';
+        toggle_close_text = '关闭';
+
+        toggle.addEventListener('click', function() {
+            nav.classList.toggle('open');
+            
+          if (nav.classList.contains('open')) {
+            toggle.innerHTML = toggle_close_text;
+          } else {
+            toggle.innerHTML = toggle_open_text;
+          }
+        }, false);
 });
 
 function center(){                                          //用于弹出框居中或者其他元素上下区中
