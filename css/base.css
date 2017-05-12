@@ -1098,8 +1098,7 @@ nav.top-right {
     left: -144px;
     bottom: 45px;
     width: 300px;
-    height: 400px;
-    /* background-color: rgba(238, 238, 238, 0.46); */
+    padding: 15px 10px;
     border: 3px solid #99bbea;
     border-radius: 10px;
     background: url(../images/car_bg.png) repeat;
@@ -1125,8 +1124,13 @@ nav.top-right {
     left: 134px;
 }
 
-
-
+.result-carmessage {
+    width: 100%;
+}
+.result-carmessage em {
+    color: #8e68ff;
+    margin: 0 5px 0 10px;
+}
 
 
 
