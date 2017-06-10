@@ -1,45 +1,15 @@
 $(document).ready(function(){
 	buttonClick();
-
-	$(".btn-listtog").click(function(){
-		 $(this).parent().parent().next().slideToggle("slow");
-		  $(this).toggleClass("btn-listtog-out btn-listtog-in ");
-		 
-	});  
-	$(".btn-listtog.top-list").click(function(){
-		 $(this).parent().parent().siblings(".messageBox").slideToggle("slow");
-		 
-	});
-	  
-	// $(".hd-list > li").mouseover(function(){
-	// 	$(this).find("ul").removeClass("hide");
-	// }).mouseout(function(){
-	// 	$(this).find("ul").addClass("hide");
-	// });
+	var n1 = $(window).height(),
+		n2 = $(window).width();
+	if (n1>500) {
+		$(".login-wrap").height(n1).width(n2);
+		$(".login-bg img").height(n1).width(n2);
+	}
 
 	
 });
   
-    
-
-$(window).load(function(){
-	center();
-	toggle = document.querySelectorAll(".toggle")[0];
-        nav = document.querySelectorAll("nav")[0];
-        toggle_open_text = '菜单';
-        toggle_close_text = '关闭';
-
-        toggle.addEventListener('click', function() {
-            nav.classList.toggle('open');
-            
-          if (nav.classList.contains('open')) {
-            toggle.innerHTML = toggle_close_text;
-          } else {
-            toggle.innerHTML = toggle_open_text;
-          }
-        }, false);
-});
-
 function center(){                                          //用于弹出框居中或者其他元素上下区中
 	function centerWay(){
 		var screenWidth = $(window).width();

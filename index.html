@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <title>登录</title>
-    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
     <script src="js/jquery.js"></script>
     <script src="js/verificationNumbers.js" tppabs="js/verificationNumbers.js"></script>
     <script src="js/Particleground.js" tppabs="js/Particleground.js"></script>
+    <script src="js/base.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
           //粒子背景特效
@@ -37,11 +38,13 @@
            <div class="login-account"> 
 
                 <form  action="index2.do" method="post" name="login" id="login">
-                    <div class="form-group">
-                        <input type="text" id="inputUsernameEmail" class="form-control login-u" name="username" placeholder="用户名">
+                    <div class="form-group login-form">
+                        <div class="login-ico login-u"></div>
+                        <input type="text" id="inputUsernameEmail" class="form-control " name="username" placeholder="用户名">
                     </div>
-                    <div class="form-group">
-                        <input type="password" id="inputPassword" class="form-control login-p" name="password" placeholder="密码">
+                    <div class="form-group login-form">
+                        <div class="login-ico login-p"></div>
+                        <input type="password" id="inputPassword" class="form-control" name="password" placeholder="密码">
                     </div>
                     <div class="form-group">
                         <button class="btn-login  right" type="submit" id="submit">登 录</button>
